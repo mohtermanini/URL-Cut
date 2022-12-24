@@ -50,9 +50,9 @@ $(document).ready(function () {
     });
     let createInvalidURLAlert = () => {
         let alert = `
-			<div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
-			<p>Please enter a valid URL.</p> 
-			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			<div class="alert alert-danger alert-dismissible fade show mb-0 py-2" id="alert-invalid-url" role="alert">
+			    <p>Please enter a valid URL.</p> 
+			    <button type="button" class="btn-close pt-2" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>
 			`;
         $(alert).prependTo("#section_form");
